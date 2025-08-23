@@ -55,7 +55,7 @@ export default function PremiumNavigation({
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button 
+            {/* <Button 
               variant="ghost" 
               size="icon"
               className="text-foreground hover:text-primary hover:bg-surface-1 transition-all duration-200"
@@ -63,7 +63,7 @@ export default function PremiumNavigation({
               <Search className="h-5 w-5" />
               <span className="sr-only">Search</span>
             </Button>
-            
+             */}
             <Button 
               variant="ghost" 
               size="icon"
@@ -87,14 +87,14 @@ export default function PremiumNavigation({
               <span className="sr-only">Shopping bag</span>
             </Button>
             
-            <Button 
+            {/* <Button 
               variant="ghost" 
               size="icon"
               className="text-foreground hover:text-primary hover:bg-surface-1 transition-all duration-200"
             >
               <User className="h-5 w-5" />
               <span className="sr-only">Account</span>
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Menu Button */}
