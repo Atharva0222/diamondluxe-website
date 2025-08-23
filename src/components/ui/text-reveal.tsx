@@ -52,9 +52,9 @@ export const TextAnimation: React.FC<TextAnimationProps> = ({
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, {
-    once: true,
-    threshold: 0.1,
-  });
+  once: true,
+  margin: "-10% 0px",
+});
 
   const variants = animationVariants[variant];
 
