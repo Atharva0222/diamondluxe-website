@@ -3,7 +3,9 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
 import { TextAnimation } from "@/components/ui/text-reveal";
-
+import { Hammer } from "lucide-react";
+ import { ShieldCheck } from "lucide-react";
+import { BadgeCheck } from "lucide-react";
 export default function DiamondHeroSection() {
   return (
     <section className="relative overflow-hidden bg-background py-24 sm:py-32">
@@ -46,34 +48,46 @@ export default function DiamondHeroSection() {
           {/* Luxury features */}
           <div className="mt-16 grid grid-cols-1 gap-8 text-center sm:grid-cols-3">
             <TextAnimation variant="slideUp" delay={1.0}>
-              <div className="group">
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary/20">
-                  <div className="h-6 w-6 rounded-full bg-primary/80"></div>
-                </div>
-                <h3 className="text-lg font-semibold text-foreground">Certified Quality</h3>
-                <p className="text-sm text-muted-foreground">GIA certified diamonds with exceptional clarity</p>
-              </div>
-            </TextAnimation>
+  <div className="group">
+    <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary/20">
+      {/* Replace circle with icon */}
+      <BadgeCheck className="h-6 w-6 text-accent/80" />
+    </div>
+    <h3 className="text-lg font-semibold text-foreground">Certified Quality</h3>
+    <p className="text-sm text-muted-foreground">
+      GIA certified diamonds with exceptional clarity
+    </p>
+  </div>
+</TextAnimation>
             
             <TextAnimation variant="slideUp" delay={1.2}>
-              <div className="group">
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 transition-colors group-hover:bg-accent/20">
-                  <div className="h-6 w-6 rounded-full bg-accent/80"></div>
-                </div>
-                <h3 className="text-lg font-semibold text-foreground">Master Craftsmanship</h3>
-                <p className="text-sm text-muted-foreground">Handcrafted by skilled artisans with decades of experience</p>
-              </div>
-            </TextAnimation>
+  <div className="group">
+    <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary/20">
+      {/* Replace circle with an icon */}
+      <Hammer className="h-6 w-6 text-accent/80" />
+    </div>
+    <h3 className="text-lg font-semibold text-foreground">Master Craftsmanship</h3>
+    <p className="text-sm text-muted-foreground">
+      Handcrafted by skilled artisans with decades of experience
+    </p>
+  </div>
+</TextAnimation>
             
-            <TextAnimation variant="slideUp" delay={1.4}>
-              <div className="group">
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary/20">
-                  <div className="h-6 w-6 rounded-full bg-primary/60"></div>
-                </div>
-                <h3 className="text-lg font-semibold text-foreground">Lifetime Guarantee</h3>
-                <p className="text-sm text-muted-foreground">Comprehensive warranty and expert maintenance service</p>
-              </div>
-            </TextAnimation>
+           
+
+<TextAnimation variant="slideUp" delay={1.4}>
+  <div className="group">
+    <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary/20">
+      {/* Replace circle with icon */}
+      <ShieldCheck className="h-6 w-6 text-accent/60" />
+    </div>
+    <h3 className="text-lg font-semibold text-foreground">Lifetime Guarantee</h3>
+    <p className="text-sm text-muted-foreground">
+      Comprehensive warranty and expert maintenance service
+    </p>
+  </div>
+</TextAnimation>
+
           </div>
         </div>
       </div>

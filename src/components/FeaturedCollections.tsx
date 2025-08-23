@@ -17,32 +17,32 @@ const collections: Collection[] = [
     name: 'Engagement Rings',
     description: 'Timeless symbols of eternal love, crafted with exceptional diamonds and precious metals.',
     icon: Heart,
-    href: '/collections/engagement-rings',
-    image: '/api/placeholder/400/500'
+    href: '/',
+    image: 'https://media.discordapp.net/attachments/1013010033329586196/1408754654711513088/rings.jpg?ex=68aae483&is=68a99303&hm=5eec9718c7bd6d79fbd335f926ba77eeb22579b14414a282cd5b0746b89945fb&=&format=webp'
   },
   {
     id: 'necklaces',
     name: 'Necklaces',
-    description: 'Elegant pieces that grace the neckline with sophisticated brilliance and refined style.',
+    description: 'Elegant pieces that grace the neckline with sophisticated brilliance, aesthetics and refined style.',
     icon: Diamond,
-    href: '/collections/necklaces',
-    image: '/api/placeholder/400/500'
+    href: '/',
+    image: 'https://media.discordapp.net/attachments/1013010033329586196/1408754654376103947/Necklace.jpg?ex=68aae482&is=68a99302&hm=e2aa4c5cf4438b3566fa3b62aed77fad18e631cf5b005f5a5a2562cdd16774e4&=&format=webp'
   },
   {
     id: 'earrings',
     name: 'Earrings',
     description: 'Exquisite designs that frame the face with luminous diamonds and precious gemstones.',
     icon: Sparkles,
-    href: '/collections/earrings',
-    image: '/api/placeholder/400/500'
+    href: '/',
+    image: 'https://media.discordapp.net/attachments/1013010033329586196/1408754655336468581/earings.jpg?ex=68aae483&is=68a99303&hm=37e474e6928c47bcf8001a592adee1e14afb129e439ba75f8a7c164b4a7ff109&=&format=webp'
   },
   {
     id: 'bracelets',
     name: 'Bracelets',
     description: 'Luxurious wrist adornments that showcase masterful craftsmanship and enduring beauty.',
     icon: Crown,
-    href: '/collections/bracelets',
-    image: '/api/placeholder/400/500'
+    href: '/',
+    image: 'https://media.discordapp.net/attachments/1013010033329586196/1408754655122423819/bracelets.jpg?ex=68aae483&is=68a99303&hm=61b6581c9a263492317557cf6c38319ab6f3f880f1cdc396f5d838b9488a4d84&=&format=webp'
   }
 ]
 
@@ -84,7 +84,7 @@ export default function FeaturedCollections({ className }: FeaturedCollectionsPr
                     />
                     
                     {/* Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-100" />
                     
                     {/* Icon */}
                     <div className="absolute top-6 right-6 w-10 h-10 bg-primary/10 backdrop-blur-sm rounded-full flex items-center justify-center border border-primary/20 transition-all duration-300 group-hover:bg-primary/20 group-hover:scale-110">
@@ -113,7 +113,7 @@ export default function FeaturedCollections({ className }: FeaturedCollectionsPr
                   </div>
 
                   {/* Hover Border Effect */}
-                  <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                  <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-25 transition-opacity duration-500 pointer-events-none">
                     <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-primary/20 via-accent/10 to-primary/20 blur-xl" />
                   </div>
                 </div>

@@ -84,7 +84,7 @@ export default function SignatureProducts() {
 
                   
                   {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
+                  {/* <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
                     <Button
                     size="sm"
                     variant="secondary"
@@ -100,7 +100,7 @@ export default function SignatureProducts() {
                       <ShoppingCart className="w-4 h-4 mr-2" />
                       Add
                     </Button>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Product Details */}
@@ -119,7 +119,7 @@ export default function SignatureProducts() {
                     </div>
                     
                     <div className="text-xs text-muted-foreground uppercase tracking-wide">
-                      Premium
+                      
                     </div>
                   </div>
                 </div>
@@ -131,13 +131,13 @@ export default function SignatureProducts() {
         {/* View All Button */}
         <TextAnimation variant="slideUp" delay={0.6}>
           <div className="text-center mt-12">
-            <Button
+            {/* <Button
               variant="outline"
               size="lg"
               className="border-border hover:border-primary hover:text-primary transition-colors duration-200">
 
               View All Collection
-            </Button>
+            </Button> */}
           </div>
         </TextAnimation>
       </div>
