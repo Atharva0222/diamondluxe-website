@@ -3,7 +3,7 @@
 import { Search, Heart, ShoppingBag, User, Menu, X } from "lucide-react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-
+import logo from "@/assets/logo.svg";
 interface PremiumNavigationProps {
   className?: string
   cartItemCount?: number
@@ -16,10 +16,10 @@ export default function PremiumNavigation({
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const navigationItems = [
-    { label: "Collections", href: "/collections" },
-    { label: "Diamonds", href: "/diamonds" },
-    { label: "Custom", href: "/custom" },
-    { label: "About", href: "/about" }
+    { label: "Collections", href: "/" },
+    { label: "Diamonds", href: "/" },
+    { label: "Custom", href: "/" },
+    { label: "About", href: "/" }
   ]
 
   const toggleMobileMenu = () => {
@@ -31,14 +31,18 @@ export default function PremiumNavigation({
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand */}
-          <div className="flex-shrink-0">
-            <a 
-              href="/" 
-              className="font-heading text-xl font-bold text-foreground tracking-tight hover:text-primary transition-colors duration-200"
-            >
-              LUXE
-            </a>
-          </div>
+<div className="flex-shrink-0">
+  <a href="/" className="flex items-center gap-2">
+    <img 
+      src="https://media.discordapp.net/attachments/1013010033329586196/1408857331751718974/logo.png?ex=68ab4423&is=68a9f2a3&hm=ac51c305b8d627dc3a056bd3a3e4375b7b5503a17ec97e29a4538c67ab6389c7&=&format=webp&quality=lossless" 
+      alt="LUXE Logo" 
+      className="w-15 h-15 object-contain" 
+    />
+    <span className="font-heading text-xl font-bold text-foreground tracking-tight hover:text-primary transition-colors duration-200">
+      
+    </span>
+  </a>
+</div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -136,14 +140,14 @@ export default function PremiumNavigation({
               {/* Mobile Actions */}
               <div className="flex items-center justify-between pt-4 border-t border-border">
                 <div className="flex items-center space-x-4">
-                  <Button 
+                  {/* <Button 
                     variant="ghost" 
                     size="icon"
                     className="text-foreground hover:text-primary hover:bg-surface-1 transition-all duration-200"
                   >
                     <Search className="h-5 w-5" />
                     <span className="sr-only">Search</span>
-                  </Button>
+                  </Button> */}
                   
                   <Button 
                     variant="ghost" 
@@ -168,14 +172,14 @@ export default function PremiumNavigation({
                     <span className="sr-only">Shopping bag</span>
                   </Button>
                   
-                  <Button 
+                  {/* <Button 
                     variant="ghost" 
                     size="icon"
                     className="text-foreground hover:text-primary hover:bg-surface-1 transition-all duration-200"
                   >
                     <User className="h-5 w-5" />
                     <span className="sr-only">Account</span>
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             </div>

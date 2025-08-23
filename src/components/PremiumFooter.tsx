@@ -48,30 +48,34 @@ export default function PremiumFooter({ className }: PremiumFooterProps) {
         <div className="pt-16 pb-12">
           {/* Brand and Newsletter Section */}
           <div className="grid lg:grid-cols-3 gap-12 mb-16">
-            <div className="lg:col-span-1">
-              <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-                Lumière Diamonds
-              </h2>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-8">
-                Crafting timeless elegance since 1952. Each piece tells a story of exceptional 
-                artistry and uncompromising quality, designed to celebrate life's most precious moments.
-              </p>
+  <div className="lg:col-span-1">
+    {/* Logo instead of name */}
+    <img
+      src="https://cdn.discordapp.com/attachments/1013010033329586196/1408860138840002783/a0c74fc663.png?ex=68ab46c0&is=68a9f540&hm=f86f216a91c307edb0ee96b96f1491d8e8ac738bced75a3c1ece48b16f41d8a8&"
+      alt="VAJRA Diamonds Logo"
+      className="w-70 h-auto mb-16"  // adjust width to fit design
+    />
+    
+    <p className="text-muted-foreground text-sm leading-relaxed mb-8">
+      Crafting timeless elegance since 1990. Each piece tells a story of exceptional 
+      artistry and uncompromising quality, designed to celebrate life's most precious moments.
+    </p>
               
               {/* Contact Information */}
-              <div className="space-y-3">
+              {/* <div className="space-y-3">
                 <div className="flex items-center gap-3 text-sm text-muted-foreground">
                   <Phone className="h-4 w-4 text-primary" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+1 (555) 446-5842</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm text-muted-foreground">
                   <Mail className="h-4 w-4 text-primary" />
-                  <span>concierge@lumierediamonds.com</span>
+                  <span>contact@vajradiamonds.com</span>
                 </div>
                 <div className="flex items-start gap-3 text-sm text-muted-foreground">
                   <MapPin className="h-4 w-4 text-primary mt-0.5" />
                   <span>Fifth Avenue Flagship<br />New York, NY 10022</span>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Newsletter Signup */}

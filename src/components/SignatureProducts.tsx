@@ -18,7 +18,7 @@ const signatureProducts: Product[] = [
     id: "1",
     name: "Eternal Brilliance Ring",
     description: "2.5ct solitaire diamond with platinum band",
-    price: 12500,
+    price: 1500,
     image:
       "https://media.discordapp.net/attachments/1013010033329586196/1408844431943274506/sign-ring.png?ex=68ab381f&is=68a9e69f&hm=80386779b0aa64fd163ffde8a30f08a4e2683533e501b5aee205f01b305521cc&=&format=webp&quality=lossless&width=856&height=856",
   },
@@ -26,7 +26,7 @@ const signatureProducts: Product[] = [
     id: "2",
     name: "Aurora Necklace",
     description: "Graduated diamond tennis necklace in 18k gold",
-    price: 8950,
+    price: 2820,
     image:
       "https://media.discordapp.net/attachments/1013010033329586196/1408844432375156808/sign-necklace.png?ex=68ab381f&is=68a9e69f&hm=17adef0f12dc5c84f3a6eb8a882dd94a4c2c61d83eb9c024d391393a1c0f123c&=&format=webp&quality=lossless&width=856&height=856",
   },
@@ -34,7 +34,7 @@ const signatureProducts: Product[] = [
     id: "3",
     name: "Celestial Earrings",
     description: "1.5ct each diamond drop earrings",
-    price: 6750,
+    price: 1450,
     image:
       "https://media.discordapp.net/attachments/1013010033329586196/1408844432777941123/sign-earing.png?ex=68ab381f&is=68a9e69f&hm=7132c2646c2990eeec3b5788e7426729deb2a85ceeee33d4129d146bc054c1f2&=&format=webp&quality=lossless&width=856&height=856",
   },
@@ -42,7 +42,7 @@ const signatureProducts: Product[] = [
     id: "4",
     name: "Infinity Bracelet",
     description: "Diamond infinity link bracelet in white gold",
-    price: 4200,
+    price: 3840,
     image:
       "https://media.discordapp.net/attachments/1013010033329586196/1408844438414950602/sign-bracelets.png?ex=68ab3821&is=68a9e6a1&hm=7cf4b731a7606735761de41d507635c957cadbf0a72259a95a20ef32509ee9b2&=&format=webp&quality=lossless&width=856&height=856",
   },
