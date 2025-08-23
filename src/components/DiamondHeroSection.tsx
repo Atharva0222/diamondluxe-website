@@ -43,27 +43,6 @@ export default function DiamondHeroSection() {
             </p>
           </TextAnimation>
 
-          {/* Call-to-action buttons */}
-          <TextAnimation variant="slideUp" delay={0.8}>
-            <div className="mt-12 flex flex-col gap-4 sm:flex-row sm:justify-center sm:gap-6">
-              <Button 
-                size="lg" 
-                className="group relative overflow-hidden bg-primary px-8 py-4 text-lg font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:scale-105"
-              >
-                <span className="relative z-10">Explore Collection</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-accent/80 opacity-0 transition-opacity group-hover:opacity-100"></div>
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-2 border-accent/50 bg-transparent px-8 py-4 text-lg font-semibold text-accent hover:bg-accent/10 hover:border-accent hover:text-accent hover:scale-105 transition-all"
-              >
-                Book Consultation
-              </Button>
-            </div>
-          </TextAnimation>
-
           {/* Luxury features */}
           <div className="mt-16 grid grid-cols-1 gap-8 text-center sm:grid-cols-3">
             <TextAnimation variant="slideUp" delay={1.0}>
