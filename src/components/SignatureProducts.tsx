@@ -19,28 +19,28 @@ const signatureProducts: Product[] = [
     name: "Eternal Brilliance Ring",
     description: "2.5ct solitaire diamond with platinum band",
     price: 12500,
-    image: "/api/placeholder/400/400"
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/c272e870-7223-41de-8cb6-fefe903cbbcb/generated_images/luxury-diamond-solitaire-engagement-ring-b72c99e6-20250823085249.jpg"
   },
   {
     id: "2",
     name: "Aurora Necklace",
     description: "Graduated diamond tennis necklace in 18k gold",
     price: 8950,
-    image: "/api/placeholder/400/400"
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/c272e870-7223-41de-8cb6-fefe903cbbcb/generated_images/elegant-diamond-tennis-necklace-in-18k-g-84cbc3f2-20250823085259.jpg"
   },
   {
     id: "3",
     name: "Celestial Earrings",
     description: "1.5ct each diamond drop earrings",
     price: 6750,
-    image: "/api/placeholder/400/400"
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/c272e870-7223-41de-8cb6-fefe903cbbcb/generated_images/stunning-diamond-drop-earrings-with-1.5--38dcd445-20250823085307.jpg"
   },
   {
     id: "4",
     name: "Infinity Bracelet",
     description: "Diamond infinity link bracelet in white gold",
     price: 4200,
-    image: "/api/placeholder/400/400"
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/c272e870-7223-41de-8cb6-fefe903cbbcb/generated_images/luxurious-diamond-infinity-link-bracelet-43654b3e-20250823085317.jpg"
   }
 ];
 
@@ -74,7 +74,7 @@ export default function SignatureProducts() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {signatureProducts.map((product, index) => (
             <TextAnimation key={product.id} variant="slideUp" delay={0.1 * index}>
-              <Card className="bg-card border-border hover:border-primary/20 transition-all duration-300 group overflow-hidden">
+              <Card className="bg-card border-border hover:border-primary/20 transition-all duration-300 group overflow-hidden h-full flex flex-col">
                 {/* Product Image */}
                 <div className="aspect-square relative overflow-hidden bg-surface-1">
                   <img
@@ -104,16 +104,16 @@ export default function SignatureProducts() {
                 </div>
 
                 {/* Product Details */}
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl font-heading font-semibold text-foreground mb-2 group-hover:text-primary transition-colors duration-200">
                     {product.name}
                   </h3>
                   
-                  <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                  <p className="text-muted-foreground text-sm mb-4 line-clamp-2 flex-grow">
                     {product.description}
                   </p>
 
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between mt-auto">
                     <div className="text-2xl font-heading font-bold text-accent">
                       {formatPrice(product.price)}
                     </div>
