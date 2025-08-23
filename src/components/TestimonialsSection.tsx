@@ -63,7 +63,7 @@ export default function TestimonialsSection({ className }: TestimonialsSectionPr
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <TextAnimation key={testimonial.id} variant="slideUp" delay={0.1 * index}>
-              <div className="group relative bg-card border border-border rounded-xl p-8 hover:border-primary/20 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
+              <div className="group relative bg-card border border-border rounded-xl p-8 hover:border-primary/20 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 h-full flex flex-col">
                 {/* Quote Icon */}
                 <div className="absolute -top-4 left-8">
                   <div className="bg-primary rounded-full p-3 shadow-lg">
@@ -82,12 +82,12 @@ export default function TestimonialsSection({ className }: TestimonialsSectionPr
                 </div>
 
                 {/* Testimonial Content */}
-                <blockquote className="text-foreground leading-relaxed mb-6 text-base">
+                <blockquote className="text-foreground leading-relaxed mb-6 text-base flex-grow">
                   "{testimonial.content}"
                 </blockquote>
 
                 {/* Author Info */}
-                <div className="border-t border-border pt-6">
+                <div className="border-t border-border pt-6 mt-auto">
                   <div className="flex flex-col">
                     <cite className="not-italic font-semibold text-foreground text-lg mb-1">
                       {testimonial.author}
