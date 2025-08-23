@@ -1,8 +1,11 @@
 "use client";
 
 import React, { useRef } from 'react';
-import { motion, useInView, Variants } from 'framer-motion';
+import { motion, useInView } from "framer-motion";
+import type { Variants } from "framer-motion";
+
 import { cn } from '@/lib/utils';
+
 
 interface TextAnimationProps {
   children: React.ReactNode;
