@@ -207,7 +207,7 @@ export default function PremiumFooter({ className }: PremiumFooterProps) {
         <div className="border-t border-border py-6">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-xs text-muted-foreground">
-              © {new Date().getFullYear()} Lumière Diamonds. All rights reserved.
+              © {new Date().getFullYear()} VAJRA Diamonds. All rights reserved. Designed and Developed by GrowthSphere Industries LLC.
             </p>
             <div className="flex items-center gap-6">
               {legalLinks.map((link, index) => (
