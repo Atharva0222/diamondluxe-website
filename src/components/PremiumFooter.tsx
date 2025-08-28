@@ -51,7 +51,7 @@ export default function PremiumFooter({ className }: PremiumFooterProps) {
   <div className="lg:col-span-1">
     {/* Logo instead of name */}
     <img
-      src="https://cdn.discordapp.com/attachments/1013010033329586196/1408860138840002783/a0c74fc663.png?ex=68ab46c0&is=68a9f540&hm=f86f216a91c307edb0ee96b96f1491d8e8ac738bced75a3c1ece48b16f41d8a8&"
+      src="https://www.growthsphereindustries.com/vajra-diamond-website-assets/full-logo.png"
       alt="VAJRA Diamonds Logo"
       className="w-70 h-auto mb-16"  // adjust width to fit design
     />

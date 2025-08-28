@@ -34,8 +34,8 @@ export default function PremiumNavigation({
 <div className="flex-shrink-0">
   <a href="/" className="flex items-center gap-2">
     <img 
-      src="https://media.discordapp.net/attachments/1013010033329586196/1408857331751718974/logo.png?ex=68ab4423&is=68a9f2a3&hm=ac51c305b8d627dc3a056bd3a3e4375b7b5503a17ec97e29a4538c67ab6389c7&=&format=webp&quality=lossless" 
-      alt="LUXE Logo" 
+      src="https://www.growthsphereindustries.com/vajra-diamond-website-assets/logo.png" 
+      alt="Vajra Logo" 
       className="w-15 h-15 object-contain" 
     />
     <span className="font-heading text-xl font-bold text-foreground tracking-tight hover:text-primary transition-colors duration-200">
